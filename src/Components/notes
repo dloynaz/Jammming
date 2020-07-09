@@ -1,0 +1,51 @@
+STEP 29:
+
+Tracks Array [{Song, Artist, Album}{Song, Artist, Album}...]
+
+SearchResult parameter this.props.Array.Song exe
+
+STEP 36:
+Create state that receives songs added in object
+Pass the state to a Playlist component like an atributte
+this.props.playlist in the tracklist component
+playlist in the tracklist 
+
+STEP 40:
+addTrack method creates an event handler 
+listining for "OnClick". Use an if else statement 
+with strings "-" and "+". 
+ Use Array.push to add TRACK 
+into playlist Array. Pass addTrack method to "TrackComponent".
+ 
+STEP 48
+Create method that chek's if minus sign is true or false. 
+If minus sign is true .shift this.props.track from 
+this.props.playlist. Set state to a variable with the
+changes. 
+
+STEP 56
+Create "input" element in playlist.js that receives value and a method that 
+inheretes functionality. 
+In app.js create a method that change SetState to this.props.value 
+Maybe use a variable that is equal to this.props.value and pass the 
+variable as the new state.  
+
+STEP 62
+In app.js POST API to spotify. Work with an State array and SetState 
+of playlist track array to empty using a method and passing it trow the playlist BUTTTON right after save. Create an event handler on playlist that passes 
+this.props.playlist.array back to app.js
+
+STEP 66
+Create method within the app.js file. This method change state of the 
+search results state whith SetState and a variable that contains an array
+of objects with the search result from the value passed in SearchResults.js. Also, in SearchResults.js file work with an input 
+that has a method that targets input value and pass it the app.js method. 
+It is posible that if we are going to be working with an array to use the .find method 
+with a function that relates the target value to the title of the song. Also we need to GET from spotify their array of objects. 
+
+STEP 74
+Use GET and POST functionalities. Create an Spotiy component and import this component (or array, or object...) into the App.js.
+In app.js I will link the API into my states using the json lenguage. 
+
+
+ 
